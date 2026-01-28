@@ -1,0 +1,5 @@
+{
+    "board": "STMicroelectronics:stm32:GenF1",
+    "fqbn": "STMicroelectronics:stm32:GenF1:pnum=BLUEPILL_F103C8",
+    "sketch": "main.ino"
+}
