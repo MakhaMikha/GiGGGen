@@ -1,4 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+    "name": "STM32-Only-Code",
+    "image": "://mcr.microsoft.com",
+    "postCreateCommand": "curl -fsSL https://raw.githubusercontent.com | sh && export PATH=$PATH:$(pwd)/bin && arduino-cli config init && arduino-cli core update-index --additional-urls https://github.com && arduino-cli core install STMicroelectronics:stm32",
+    "customizations": {
+        "vscode": {
+            "extensions": ["vsciot-vscode.vscode-arduino", "ms-vscode.cpptools"]
+        }
+    }
 }
